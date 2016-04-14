@@ -52,14 +52,20 @@
 <ul>
 <li>The first approach that we used was basically exactly what was suggested in the paper by Jeff Bilmes</li>
 <li>In the second approach, we dealt the problem a bit differently.Instead of using K-means clustering, we used Agglomerative since it was more intuitive that the inherent distribution/shape which the sentences follow should not be disturbed by using partition-based clustering.</li>
-<li>In the final approach, we approached the problem using another technique on which we first get the most the similar cluster of sentence and get the best sentence base on the best coverage. We follow on till we have extracted sufficient summary.</li>
 </ul>
 
 <h2>
-<a id="how-to-run-the-code" class="anchor" href="#how-to-run-the-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To run the code</h2>
+<a id="challenges-faced-1" class="anchor" href="#challenges-faced-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Challenges faced</h2>
 
 <ul>
-<li>python <em>filename</em> with all the dependencies installed and uploaded folders in the same directory.</li>
+<li>Understanding the output of the Tool CLUTO, after which finding the summary of the given documents using the clustering was a simple implementation of the formula suggested in the paper.</li>
+<li>
+<p>The time taken to find the summary was quite large but this could be solved by ignoring the sub-modular function condition i.e. f(A+v)-f(A) &gt; f(B+v) - f(B) at the cost of Accuracy</p>
+
+<h2>
+<a id="how-to-run-the-code" class="anchor" href="#how-to-run-the-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To run the code</h2>
+</li>
+<li><p>python <em>filename</em> with all the dependencies installed and uploaded folders in the same directory.</p></li>
 </ul>
 
 <h2>
